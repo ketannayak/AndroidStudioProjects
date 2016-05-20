@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="homepage_title">श्री रामनाथ स्तुति </string>
+    <string name="button_allStutis" translatable="false">सगळे स्तुति</string>
+    <string name="Ganapati_stuti_button" translatable="false">गणपति स्तुति</string>
+    <string name="ganapati_stuti_page_title" translatable="false">श्री गणपति स्तुति</string>
+</resources>

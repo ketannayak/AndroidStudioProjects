@@ -8,24 +8,40 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.content.Intent;
+import android.widget.EditText;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
+import java.util.Locale;
+import android.content.res.Configuration;
+import android.util.Log;
+import android.widget.TextView;
 
 public class MyActivity extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(this);
+        Configuration config = getBaseContext().getResources().getConfiguration();
+
+        String lang = settings.getString("language_preference", "");
+
+
+        //TextView textviewsetting = (TextView)findViewById(R.id.copyright_text);
+        //textviewsetting.setText(lang);
+
+        if (! "".equals(lang) && ! config.locale.getLanguage().equals(lang)) {
+            Locale locale = new Locale(lang);
+            Locale.setDefault(locale);
+            config.locale = locale;
+            getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
+        }
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
 
-       FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
     }
 
     @Override
@@ -49,4 +65,25 @@ public class MyActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    /*Called when the user clicks the View All Stutis button */
+    public void viewAllStutis(View view) {
+        //Do something in response to the button
+        Intent intent = new Intent(this,ViewAllStutis.class);
+        startActivity(intent);
+
+    }
+
+    /*Called when the user clicks the View All Stutis button */
+    public void viewSettings(View view) {
+        //Do something in response to the button
+        Intent intent = new Intent(this,SettingsActivity.class);
+        startActivity(intent);
+
+    }
+
+
+
 }
+
+

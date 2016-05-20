@@ -1,4 +1,96 @@
 <resources>
-    <string name="app_name">TrialApp</string>
-    <string name="action_settings">Settings</string>
+
+    <!--App Name etc.-->
+    <string name="app_name" translatable="false">Ramnathi Stuti</string>
+
+    <!-- Text on the home page -->
+    <string name="homepage_title">Shree Ramnath Stuti</string>
+    <string name="button_allStutis">View all Stutis</string>
+    <string name="button_settings" translatable="false">Settings</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="copyright_text" translatable="false">v1.0, Copyright 2016, Omkar Technologies</string>
+
+    <!-- Text on the all Stutis page -->
+    <string name="Lakshminarayana_stuti_button" translatable="false">Lakshminarayan Stuti</string>
+    <string name="Ramnath_stuti_button" translatable="false">Ramnath Jhulava</string>
+    <string name="Shantadurga_stuti_button" translatable="false">Shantadurga Stuti</string>
+    <string name="Ganapati_stuti_button" translatable="false">Ganapati Stuti</string>
+    <string name="Kamakshi_stuti_button" translatable="false">Kamakshi Stuti</string>
+    <string name="Betal_stuti_button" translatable="false">Betal Stuti</string>
+    <string name="Kalabhairav_stuti_button" translatable="false">Kalabhairavashtakam</string>
+    <string name="Magalashtakam_stuti_button" translatable="false">Mangalashtakam (Palki)</string>
+
+
+    <!--Common text-->
+    <string name="go_main_menu" translatable="false">Back to All Stutis</string>
+    <string name="next_stuti" translatable="false">Next Stuti</string>
+    <string name="previous_stuti" translatable="false">Previous Stuti</string>
+    <string name="back_to_main" translatable="false">Back to main menu</string>
+
+
+    <!--Settings text-->
+
+    <!--Lakshminarayan Stuti Page-->
+    <string name="lakshminarayan_stuti_page_title" translatable="false">Shree Lakshminarayan Stuti</string>
+    <string name="lakshminarayan_stuti_fulltext" translatable="false">Shree Ganeshaya. Namah sheshashayi lakshminarayana. Aadimoorti omkaara suguna. Tuja dhyato kailaasincha raana. Suravara vanditi charana.||1|| Bhaktakajalaagi punya keerti. Sange ghevuniya aadishakti. Pragatali chaturbhuja murti. Shanka chakra gada padma haati.||2|| Ratnamaya mukuta kundale. Haasyamukha sundar shobhale pitambar paridhan kele. Koti surya teja prakashale.||3| Bhaali divya kasturicha tiLa. Gala roole vaijayanti maala. Srivastaachi khoona vakshasthala. Angaranga ruchira saavaLa.||4|| Laviyale mana tujya dhaani. Drushya pancha vishayaancha raani. Naagavile kaamadi choraani maariti hai dhaav chakrapaani. ||5|| Dhavunity gaja uddharisi. Droupadila sankati paavsi. Ajamila paataki taarisi. Majachi kaa devi mokalisi.||6|| Arpiyale tan man dhan. Daavi maja ekada charana. Tujaveen jhaalo bahu deen. Kari deva maajhi aathvana.||7|| Nijabhakta kaam kalpadruma. Aisi thori varniti nigama. Bhavabhaya vaari tujhe naam. Krishna mhane mukhya hechi varma.||8||</string>
+
+
+    <!--Ramnath Stuti page -->
+    <string name="ramnath_stuti_page_title" translatable="false">Shree Ramnath Devacha Jhulava</string>
+    <string name="ramnath_stuti_fulltext" translatable="false">Sadashiva deva rameshwara. Vishwajanasi tuja aadhara. Namanantre paap parihaara. Neelakantha tu rameshwara.||1|| Aganita lingaamaji uttama. Jagi prasidda rameshwar naam. Bhakt janaasi tu vishram. Divya swaroop tu parabrahma.||2|| Trinetra tu karpoor goura. Trishool damaru tu digambara. Vibhuti sakkhya kanthi hara. Neelakantha tu rameshwara.||3|| Bhaali chandra tu umechya vallabha. Bhaali tripudra laayaka shobha. Jata mukuta gangesi shoba. Bairavi vetaala sanmukha ubha.||4|| Jyachya charanashi karani kalena. Kaallakantaka daitya nivaari. Madana jaaluni keli holi. Poorna samudra tu chandramouli.||5|| Somavaari tujhi puja mahima thori. Puja bandhiti nanapari. Bhaktajana yeti tujhe mandiri. Puraana keertana hota hai bhaari.||6|| Devadhideva paar na kaaLe tujha. Konata saankuL dev maajha. Chaturmukhi brahmna bole vaacha. Dhanya divas aaj soniyaacha.||7|| Vedapuraani na kaLe anta. Ramnath dev mahima samartha. Prasanna jhalya riddhisiddhi vade. Tujha mahima akhanda samartha.||8||</string>
+
+
+    <!--Shantadurga Stuti Page-->
+    <string name="shantadurga_stuti_page_title" translatable="false">Shree Shantadurga Stuti</string>
+    <string name="shantadurga_stuti_fulltext" translatable="false">Shree Ganeshaya namaha jagadambe shantayi bhavani. Tujhe moolsthana rishivani. Vipralagi prasanna houni. Aali lotavalisa kalyani.||1|| Ramanathapurvi nimba lona. Tuja aarti shadrasa pakvann. Mahajan deti bahu man. Bhave samarpiti nrutya gaan.||2|| Paalkheene pratipanchamisa tujhi svaari nighe saavkaash. Varvadhu varniti vilaas. Bhaktajanamaanasi ullasa.||3|| Aadhi tujhe swarup sundar. Nesalisa jari peetambar. Vari jaditaache alankaar. Tene dise dhyaan manohar.||4|| Trasvile vipra daanvaani. Aali tyancha sankati dhaavoni. Parakrame dushta ragadoni sukhi kele dvija varadaani.||5|| Kaam krodh lobh dusht bhaari traas deti maja nana pari. Yaansi nirdaluni mala tari. Bhavabhaya samoola tiwaari. ||6|| Ati amoulika narkaya. Upayogi saadhana karaya. Janam mrutyu bhaya chakavaya. Jhadakari daavi aatmathaya.||7|| Tujha aadhare aatamaaram. Thaayi pade hrudayi visharam. Kalpanecha karuni viraam. Krishna daavi nijasukhadaam.||8||</string>
+
+    <!--Ganapati Stuti Page-->
+    <string name="ganapati_stuti_page_title">Shree Ganapati Stuti</string>
+    <string name="ganapati_stuti_fulltext" translatable="false">Aadinaatha jagannatha praananaatha puratana sarva kaaryasiddhidaata siddhinaatha namostute nitya rakshi bhakta jana. Aparaadha kshamaapana. Dasa aale aaple mhanoona. Karije dosha naashana.</string>
+
+
+    <!--Kamakshi Stuti Page-->
+    <string name="kamakshi_stuti_page_title" translatable="false">Shree Kamaskhi Panchayatan Stuti</string>
+    <string name="kamakshi_stuti_fulltext" translatable="false">Shree ganeshaaya namaha. Jaya kamakshe mangalmoorte. Kaaura deshavaasini tu maate. Raaya graami prasanna samarthe. Aali lotavali krupavanta.||1|| Saata sahasra gana tujha sangi. Kaalabhairava ubha agrabhaagi. Auta koti bhoote tujalaagi bhaktarakshanasaathi upayogi.||2|| Tuva mahishaasura nirdaloni. Chanda mundadaitya vidhvansoni. Shumbanishumbaasi ragadoni. Deva sodavile trasantuni.||3|| Ramnath sthala hai pavitra. Aavadine kele krupa paatra. Bhakta upaasiti ahoratra. Tuja bahumaanito trinetra.||4|| Navaratri ashwinamaasanta. Bhakta jana yeti ashankhyaata. Basaviti tujha makharaanta. Dvadasheesa bhaara kaula deta.||5|| Prati aamavasye paalakheenta. Tujhi svaari nighe miravata. Pudhe vaadhaghosha. Nrutyageeta. Samaagame mahaajana jaata.||6|| Vadya dvaadasheesa maaghamaasi. Aarambhiti jaatra aanandesi. Puraana keertan naatakaasi. Shivaratri utsavi vaisasi.||7|| Bhaktimukti daasaanlaagi dhyaya. Paapi dushta durjana dandaya. Avataralo tu aadi maaya. Olakhuni krishna dhari paaya.||8|| </string>
+
+    <!--Betaal Stuti Page-->
+    <string name="betal_stuti_page_title" translatable="false">Shree Vetaal Stuti</string>
+    <string name="betal_stuti_fulltext" translatable="false">Shree ganeshaaya namaha. Jaya vetaala khanderaya. Bhaktajana sankata haraaya. Khadga daala haati dharoniya siddh tujhi vishaala kaaya.||1|| Kshetradhipati tu kshetra paala. Tujhe naama aagiya vetala. Bhoot preta pishachyancha mela. Tavaghene varte sarvakaala.||2|| Saasashtimadhye lotavali graam tethe aagara khanuni kele naam. Tuja bhakta rakshanaache kaam. Aise guna varniti uttama.||3|| Kurdi shotodiche thor vasti. Bhoushulecha baandhaachi prakhyaati. Aikouniya lok vaakhaaniti. Sarvaanthaayi gaaje tuji keerti.||4|| Ramnath-shaanta-padi thevuniya tishtasi samaksha. tyaanchi aagna paalavaya daksha. Tuja priya maani virupaaksha.||5|| Ashwinamaasi dasara thor. Trupta housi karuni aahara. Prakatasi tarangi avasar. Bhetavaya yeti naari nara.||6||Bhoot pret pida parihaar. Karitase tujha avasar. Paahtaati jana saakshatkaar. Vaanti sevakaasi dravyabhaar.||7|| Sarvandesi kaula pushpamaala. Purvajaansi dila shabda paala. Kari sarva bhaktancha sambhaala. Krishna tuja vaani sarvakaala.||8||</string>
+
+
+    <!--Kaalabhairavashtakam Stuti Page-->
+    <string name="kalabhairav_stuti_page_title" translatable="false">Kalabhairavashtakam</string>
+    <string name="kalabhairav_stuti_fulltext" translatable="false">Shree ganeshaaya namaha. Devarajyasevyamanapaavanaadhnipankajam. vyaalayajna sutramindushekharam krupakaram. Naradadiyogivrundavanditam digambaram kashikapuradhinaatha kalabhairavam bhaje.||1|| Bhaanukotibhaavasvaram bhaavabdhitaarakam param neelakanthamipsitarthadayakam trilochanam. Kaalakaalamamvujaakshamashoolamaksharam kashika.||2|| Shoolatankapaashadandapaanimaadikaaranam shyamakam madidevamaksharam niramayam. Bhim vikramam prabhu vichitrataandavapriyam kashika.||3|| Bhuktimuktidaayakam Prashastacharuvigraham bhaktavatsalam sthitam samasthalokavigraham. Vinikvananmanognahemaakinkinilasatkatim kashika.||4|| Dharmasetupaalakam svadharmamaarganaashakam karmapaashamochakam Susharmadaayakam vibhum svarvavarnasheshapaashashobhitaangamandalam kashika.||5|| Ratnapaaduka prabhabhiramapaadayugmakam nitvamapadayugmakam nityamaadvitiyamishtadaivatam niranjanam. Mrutvachadarpanaashanam karaaladamshtramokshanam kashika.||6|| Attahaasabhinna pahmajaandakoshasantati drishtipaatanashtapaapjaatamugra-shaasanam. Ashtasiddhidaayakam kapaalamaalikandharam kaashika||7|| Bhootasanghanaayakam vishaalakirtidaayaka kaashivaasalokapunyapaapashodhakam vibhum. Nitimaargakobidam puratana jagatpatim kashika.||8|| Kalabhairavaashtakam pathanti ye manoharam gnanamuktisadhanam vichitrapunyavarthanam shokamohadainvalobhakopataapanaashanam prayanti kalabhairavaadhnisannidhi nara dhruvam. ||9|| Iti shrimacchankarachaaryavirachitam kalabhairavashtakam sammpurnam.</string>
+
+
+    <!--Mangalashtakam Stuti Page-->
+    <string name="mangalashtakam_stuti_page_title" translatable="false">Mangalshtakam</string>
+    <string name="mangalashtakam_stuti_fulltext" translatable="false">Laksmiryasya parigraha kamalabhoo sunugarutaman rathaha pautrashrachandravibhushanaha suraguruhu sheshashracha shayyashana|| Brahmandam varamandiram suragana yasyaprabhoho sevakaha sa trailokya kutumbapaalanaparaha kurvantu vo managalam|| \n Brahma vaayugirisha sheshagaruda devendrakaamou guruhu chandrakau varunaanalau manuyamau vittesha vighneshravarau||</string>
+
+
+    <string name="title_activity_ramnath_stuti" translatable="false">"Ramnath Jhulava "</string>
+
+
+    <string name="ramnath_title" translatable="false">Ramnath</string>
+    <string name="title_activity_view_all_stutis" translatable="false">All Stutis</string>
+
+
+    <!-- Strings related to Settings -->
+    <string name="title_activity_settings" translatable="false">Settings</string>
+
+    <string name="pref_language_setting" translatable="false">Set language preference</string>
+    <string-array name="pref_language_list_names">
+        <item>English</item>
+        <item>मराठी</item>
+        <item>ಕನ್ನಡ</item>
+    </string-array>
+    <string-array name="pref_language_list_values">
+        <item>en</item>
+        <item>mr</item>
+        <item>kn</item>
+    </string-array>
+
+
+
+
 </resources>
