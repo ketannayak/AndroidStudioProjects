@@ -1,4 +1,4 @@
-package com.ketannayak.trialapp;
+package com.omkartech.RamnathStuti;
 
 import android.content.res.Configuration;
 import android.os.Bundle;

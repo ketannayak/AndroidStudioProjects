@@ -12,8 +12,8 @@
     android:background="@color/appBackgroundcolor"
     android:gravity="center_horizontal"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.ketannayak.trialapp.ViewAllStutis"
-    tools:showIn="@layout/activity_view_all_stutis">
+    tools:context=".AllStutisActivity"
+    tools:showIn="@layout/allstutisactivitylayout">
 
 
     <Button

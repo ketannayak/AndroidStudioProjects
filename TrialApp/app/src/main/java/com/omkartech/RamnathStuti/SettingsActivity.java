@@ -1,4 +1,4 @@
-package com.ketannayak.trialapp;
+package com.omkartech.RamnathStuti;
 
 
 import android.annotation.TargetApi;
@@ -61,7 +61,7 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
                                 PackageManager.COMPONENT_ENABLED_STATE_DISABLED);
 
                         ComponentName component=new ComponentName(SettingsActivity.this,
-                                OnBootReceiver.class);
+                                ReceiverOnBoot.class);
 
                         getPackageManager()
                                 .setComponentEnabledSetting(component,
@@ -69,15 +69,15 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
                                         PackageManager.DONT_KILL_APP);
 
                         if (enabled) {
-                            OnBootReceiver.setAlarm(SettingsActivity.this);
+                            ReceiverOnBoot.setAlarm(SettingsActivity.this);
                         }
                         else {
-                            OnBootReceiver.cancelAlarm(SettingsActivity.this);
+                            ReceiverOnBoot.cancelAlarm(SettingsActivity.this);
                         }
                     }
                     else if ("notification_time".equals(key)) {
-                        OnBootReceiver.cancelAlarm(SettingsActivity.this);
-                        OnBootReceiver.setAlarm(SettingsActivity.this);
+                        ReceiverOnBoot.cancelAlarm(SettingsActivity.this);
+                        ReceiverOnBoot.setAlarm(SettingsActivity.this);
                     }
                 }
             };
@@ -152,8 +152,7 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
 
 
     }
-
-
+    
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
@@ -185,7 +184,7 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
         @Override
         public void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
-            addPreferencesFromResource(R.xml.pref_general);
+            addPreferencesFromResource(R.xml.generalpreferences);
             setHasOptionsMenu(true);
 
             // Bind the summaries of EditText/List/Dialog/Ringtone preferences

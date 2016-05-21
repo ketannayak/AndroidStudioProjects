@@ -1,7 +1,9 @@
-package com.ketannayak.trialapp;
+package com.omkartech.RamnathStuti;
 
 /**
  * Created by ketannayak on 5/15/16.
+ * Creates a time picker in the settings activity
+ * Much of this was adopted from : https://github.com/commonsguy/cw-lunchlist
  */
 
 import android.annotation.TargetApi;
@@ -40,17 +42,25 @@ public class TimePreference extends DialogPreference {
 
     @Override
     protected View onCreateDialogView() {
-        picker=new TimePicker(getContext());
 
+        picker=new TimePicker(getContext());
         return(picker);
+
     }
 
     @Override
     protected void onBindDialogView(View v) {
         super.onBindDialogView(v);
 
-        picker.setHour(lastHour);
-        picker.setMinute(lastMinute);
+        if(Build.VERSION.SDK_INT <= Build.VERSION_CODES.LOLLIPOP)
+        {
+            picker.setCurrentHour(lastHour);
+            picker.setCurrentMinute(lastMinute);
+
+        } else {
+            picker.setHour(lastHour);
+            picker.setMinute(lastMinute);
+        }
     }
 
     @Override
@@ -58,8 +68,17 @@ public class TimePreference extends DialogPreference {
         super.onDialogClosed(positiveResult);
 
         if (positiveResult) {
-            lastHour=picker.getHour();
-            lastMinute=picker.getMinute();
+
+            if(Build.VERSION.SDK_INT <= Build.VERSION_CODES.LOLLIPOP)
+            {
+                lastHour=picker.getCurrentHour();
+                lastMinute=picker.getCurrentMinute();
+
+            } else {
+                lastHour=picker.getHour();
+                lastMinute=picker.getMinute();
+            }
+
 
             String time=String.valueOf(lastHour)+":"+String.valueOf(lastMinute);
 

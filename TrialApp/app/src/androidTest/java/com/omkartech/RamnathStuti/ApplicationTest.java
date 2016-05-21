@@ -1,4 +1,4 @@
-package com.ketannayak.trialapp;
+package com.omkartech.RamnathStuti;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

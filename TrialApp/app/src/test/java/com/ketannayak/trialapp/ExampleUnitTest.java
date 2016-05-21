@@ -1,4 +1,4 @@
-package com.ketannayak.trialapp;
+package com.omkartech.RamnathStuti;
 
 import org.junit.Test;
 

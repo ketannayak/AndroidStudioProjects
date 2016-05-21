@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.ketannayak.trialapp">
+    package="com.omkartech.RamnathStuti">
 
     <application
         android:allowBackup="true"
@@ -9,7 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MyActivity"
+            android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -18,38 +18,38 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ViewAllStutis"
+            android:name=".AllStutisActivity"
             android:label="@string/title_activity_view_all_stutis"
-            android:parentActivityName=".MyActivity"
+            android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.ketannayak.trialapp.MyActivity" />
+                android:value=".MainActivity" />
         </activity>
         <activity
-            android:name=".SettingsActivity"
+            android:name="com.omkartech.RamnathStuti.SettingsActivity"
             android:label="@string/title_activity_settings"
-            android:parentActivityName=".MyActivity">
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.ketannayak.trialapp.MyActivity" />
+                android:value=".MainActivity" />
         </activity>
         <activity
-            android:name=".Ramnath_Stuti"
+            android:name=".StutiDetailActivity"
             android:label="@string/title_activity_ramnath_stuti"
-            android:parentActivityName=".ViewAllStutis"
+            android:parentActivityName=".AllStutisActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.ketannayak.trialapp.ViewAllStutis" />
+                android:value=".AllStutisActivity" />
         </activity>
         <receiver android:enabled="false"
-            android:name=".OnBootReceiver">
+            android:name=".ReceiverOnBoot">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
-        <receiver android:name=".OnAlarmReceiver"></receiver>
+        <receiver android:name=".NotificationReceiver"></receiver>
     </application>
 
 </manifest>

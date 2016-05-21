@@ -1,4 +1,4 @@
-package com.ketannayak.trialapp;
+package com.omkartech.RamnathStuti;
 
 
 import android.app.AlarmManager;
@@ -10,7 +10,7 @@ import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 import java.util.Calendar;
 
-public class OnBootReceiver extends BroadcastReceiver {
+public class ReceiverOnBoot extends BroadcastReceiver {
 
     public static void setAlarm(Context ctxt) {
 
@@ -39,13 +39,13 @@ public class OnBootReceiver extends BroadcastReceiver {
     }
 
     private static PendingIntent getPendingIntent(Context ctxt) {
-        Intent i=new Intent(ctxt, OnAlarmReceiver.class);
+        Intent i=new Intent(ctxt, NotificationReceiver.class);
         return(PendingIntent.getBroadcast(ctxt, 0, i, 0));
     }
 
     @Override
     public void onReceive(Context ctxt, Intent intent) {
-        android.util.Log.e("****OnBootReceiver", "got here");
+        android.util.Log.e("****ReceiverOnBoot", "got here");
         setAlarm(ctxt);
     }
 }
