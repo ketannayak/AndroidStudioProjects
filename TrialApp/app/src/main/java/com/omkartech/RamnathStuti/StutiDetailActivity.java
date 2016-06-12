@@ -32,33 +32,6 @@ public class StutiDetailActivity extends AppCompatActivity {
         Stuti_page_title.setText(pagetitle);
         Stuti_page_fulltext.setText(fulltext);
 
-        /*
-        //Assign the onclick actions for each of the previous and the next buttons
-        Button previousButton = (Button) findViewById(R.id.ramnath_stuti_page_previous);
-        assert previousButton != null;
-        previousButton.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                AllStutiView(v);
-
-            }
-        });
-
-
-        Button nextButton = (Button) findViewById(R.id.ramnath_stuti_page_next);
-        assert nextButton != null;
-        nextButton.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                Method method = getClass().getMethod("ShantadurgaStutiView", );
-                method.invoke(this,v);
-            }
-        });
-
-        */
-
     }
 
     /*Called when the user clicks the View All Stutis button */

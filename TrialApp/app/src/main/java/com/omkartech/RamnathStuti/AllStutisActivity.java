@@ -23,10 +23,6 @@ public class AllStutisActivity extends AppCompatActivity {
         Intent intent = new Intent(this,StutiDetailActivity.class);
         intent.putExtra("pagetitle",getResources().getString(R.string.ramnath_stuti_page_title));
         intent.putExtra("pagecontent", getResources().getString(R.string.ramnath_stuti_fulltext));
-        intent.putExtra("nextpagetitle", getResources().getString(R.string.shantadurga_stuti_page_title));
-        intent.putExtra("nextpagecontent", getResources().getString(R.string.shantadurga_stuti_fulltext));
-        //intent.putExtra("previousfunc", AllStutisActivity.class);
-        //intent.putExtra("nextfunc", ShantadurgaStutiView.class);
         startActivity(intent);
     }
 
@@ -36,8 +32,6 @@ public class AllStutisActivity extends AppCompatActivity {
         Intent intent = new Intent(this,StutiDetailActivity.class);
         intent.putExtra("pagetitle",getResources().getString(R.string.shantadurga_stuti_page_title));
         intent.putExtra("pagecontent",getResources().getString(R.string.shantadurga_stuti_fulltext));
-        //intent.putExtra("previousfunc",RamnathStutiView);
-        //intent.putExtra("nextfunc",AllStutisActivity.class);
         startActivity(intent);
     }
 

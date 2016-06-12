@@ -4,13 +4,8 @@
      dismiss it. -->
 <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
 
-<com.omkartech.RamnathStuti.LanguageListPreference
-    android:key="language_preference"
-    android:title="@string/pref_language_setting"
-    android:defaultValue="@string/language_setting_default"
-    />
 
-<!--
+
 <ListPreference
     android:defaultValue="mr"
     android:entries="@array/pref_language_list_names"
@@ -19,7 +14,6 @@
     android:negativeButtonText="@null"
     android:positiveButtonText="@null"
     android:title="@string/pref_language_setting" />
-    -->
 
 <CheckBoxPreference
     android:key="needDailyNotifications"

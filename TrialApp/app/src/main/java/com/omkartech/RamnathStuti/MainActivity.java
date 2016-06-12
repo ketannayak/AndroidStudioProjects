@@ -1,5 +1,6 @@
 package com.omkartech.RamnathStuti;
 
+import android.content.BroadcastReceiver;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -11,7 +12,13 @@ import android.preference.PreferenceManager;
 import java.util.Locale;
 import android.content.res.Configuration;
 
+
 public class MainActivity extends AppCompatActivity {
+
+    private BroadcastReceiver sendBroadcastReceiver;
+    private BroadcastReceiver deliveryBroadcastReceiver;
+    String SENT = "SMS_SENT";
+    String DELIVERED = "SMS_DELIVERED";
 
 
     @Override
@@ -21,17 +28,19 @@ public class MainActivity extends AppCompatActivity {
         Configuration config = getBaseContext().getResources().getConfiguration();
 
         String lang = settings.getString("language_preference", "");
-        if (! "".equals(lang) && ! config.locale.getLanguage().equals(lang)) {
+        if (!"".equals(lang) && !config.locale.getLanguage().equals(lang)) {
             Locale locale = new Locale(lang);
             Locale.setDefault(locale);
             config.locale = locale;
             getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
         }
 
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mainactivitylayout);
 
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -58,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
     /*Called when the user clicks the View All Stutis button */
     public void viewAllStutis(View view) {
         //Do something in response to the button
-        Intent intent = new Intent(this,AllStutisActivity.class);
+        Intent intent = new Intent(this, AllStutisActivity.class);
         startActivity(intent);
 
     }
@@ -66,13 +75,11 @@ public class MainActivity extends AppCompatActivity {
     /*Called when the user clicks the View All Stutis button */
     public void viewSettings(View view) {
         //Do something in response to the button
-        Intent intent = new Intent(this,SettingsActivity.class);
+        Intent intent = new Intent(this, SettingsActivity.class);
         startActivity(intent);
 
     }
-
-
-
+    
 }
 
 

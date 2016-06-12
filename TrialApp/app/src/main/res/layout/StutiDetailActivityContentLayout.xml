@@ -34,50 +34,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/Ramnath_stuti_page_fulltext"
         android:layout_marginBottom="30sp"
-        android:textSize="15sp"
+        android:textSize="@dimen/prayer_text_size"
         android:lineSpacingMultiplier="1.2"
         />
-
-        <!--
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-
-            <Button
-                android:layout_width="125dp"
-                android:layout_height="30dp"
-                android:id="@+id/ramnath_stuti_page_previous"
-                android:text="@string/previous_stuti"
-                android:background="@color/buttonBackground"
-                android:textColor="@color/buttonTextcolor"
-                android:onClick="AllStutiView"
-                android:textAllCaps="false"
-                android:layout_marginTop="5sp"
-                android:layout_marginRight="25sp"
-                android:layout_marginBottom="5sp"
-                android:layout_marginLeft="5sp"
-                android:paddingTop="0sp"
-                android:layout_gravity="start" />
-
-            <Button
-                android:layout_width="125dp"
-                android:layout_height="30dp"
-                android:id="@+id/ramnath_stuti_page_next"
-                android:text="@string/next_stuti"
-                android:background="@color/buttonBackground"
-                android:textColor="@color/buttonTextcolor"
-                android:onClick="AllStutiView"
-                android:textAllCaps="false"
-                android:layout_marginTop="5sp"
-                android:layout_marginRight="5sp"
-                android:layout_marginBottom="5sp"
-                android:layout_marginLeft="25sp"
-                android:paddingTop="0sp"
-                android:layout_gravity="end"/>
-
-        </LinearLayout>
-        -->
 
         <Button
             android:layout_width="200sp"
